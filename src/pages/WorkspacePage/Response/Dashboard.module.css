@@ -1,0 +1,216 @@
+.dashboardContainer {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .summaryStats {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.counters {
+    width: 40%;
+    padding: 0 30%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  .statItem {
+    background: rgba(50, 50, 50, 1);
+    color: white;
+    height: 6rem;
+    width: 10rem;
+    padding: 20px;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .statItem h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .statItem p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+  }
+  
+  .completionRate {
+    position: relative;
+    width: 18rem;
+    height: 20rem;
+  }
+  
+  .completionText {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(100%, 30%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .completionText h4, .completionTextBox h4 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .completionText h4 {
+    color: #333333;
+  }
+
+  .completionTextBox {
+    height: 5.5rem;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(50, 50, 50, 1);
+  }
+
+  .completionTextBox p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .tableContainer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .submissionTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .submissionTable th, .submissionTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .submissionTable th {
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .submissionTable tr:nth-child(even) {
+    background: #fafafa;
+  }
+  
+  .submissionTable tr:hover {
+    background: #f1f1f1;
+  }
+
+/* Default styles already provided */
+
+/* Responsive styles for screens 768px and below */
+@media (max-width: 768px) {
+  .dashboardContainer {
+    padding: 10px;
+  }
+
+  .summaryStats {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .counters {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .statItem {
+    height: 5rem;
+    width: 100%;
+    max-width: 15rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .statItem h3 {
+    font-size: 1rem;
+  }
+
+  .statItem p {
+    font-size: 1.5rem;
+  }
+
+  .pie {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .completionRate {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .completionText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+
+  .completionText h4 {
+    font-size: 1.5rem;
+  }
+
+  .completionTextBox {
+    width: 10rem;
+    height: auto;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: .5rem;
+  }
+
+  .completionTextBox p {
+    font-size: 1rem;
+  }
+
+  .completionTextBox h4 {
+    font-size: 1.5rem;
+  }
+
+  .tableContainer {
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .submissionTable th, .submissionTable td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .submissionTable {
+    font-size: 0.8rem;
+  }
+}

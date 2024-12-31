@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 8rem;
+    color: white;
+}
+
+.footer .links .header, .footer .company .header {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer .links p:not(.header):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer .links, .footer .company {
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .links p, .footer .company p {
+        text-align: center;
+    }
+
+    .footer .links .header, .footer .company .header {
+        font-size: .8rem;
+    }
+
+    .footer .links p:not(.header), .footer .company p:not(.header) {
+        font-size: .7rem;
+    }
+}

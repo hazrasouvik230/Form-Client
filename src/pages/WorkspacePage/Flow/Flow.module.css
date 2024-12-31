@@ -1,0 +1,11 @@
+.workspaceContent {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .workspaceContent {
+        flex-direction: column;
+    }
+}

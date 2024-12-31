@@ -1,0 +1,66 @@
+.landingNavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+}
+
+.landingNavbar .logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.landingNavbar .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.landingNavbar .buttons button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.landingNavbar .buttons .signinBtn {
+    border: 2px solid rgba(26, 95, 255, 1);
+    color: rgba(26, 95, 255, 1);
+    background: transparent;
+}
+
+.landingNavbar .buttons .createBtn {
+    background: rgba(26, 95, 255, 1);
+    color: white;
+}
+
+
+/* Media query for 768px screen */
+@media (max-width: 768px) {
+    .landingNavbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .landingNavbar .logo {
+        font-size: 1rem;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .landingNavbar .buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .landingNavbar .buttons button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}

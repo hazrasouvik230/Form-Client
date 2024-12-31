@@ -1,0 +1,1 @@
+export const baseUrl = "https://form-server-brgh.onrender.com"

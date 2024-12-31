@@ -1,0 +1,63 @@
+.sidebar {
+  width: 100%;
+  height: 80vh;
+  max-width: 25rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid rgba(189, 189, 189, 0.5);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.button {
+  height: 2.5rem;
+  border: none;
+  border-radius: .5rem;
+  background: rgba(31, 31, 35, 1);
+  color: white;
+  font-size: .9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Default styles already provided */
+
+/* Responsive styles for screens 768px and below */
+@media (max-width: 768px) {
+  .sidebar {
+    width: calc(100% - 2rem);
+    max-width: none;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .sectionTitle {
+    font-size: .9rem;
+  }
+
+  .button {
+    font-size: .7rem;
+    font-weight: 500;
+  }
+}
